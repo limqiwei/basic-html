@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is for containing meta data, things that you don't usually see -->
+
+    <meta charset="UTF-8" />
+    <!-- UTF stands for Unicode Transformation Format, basically it says that this html page supports unicode characters -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- This is for compatability and versioning issue, to specify the version of the internet explorer that the page should be rendered as -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <!-- This is quite important for responsive web design. Read up more -->
+
+    <title>My title</title>
+    <!-- You can see on the "tab" info that this is your tab name. This refers to the document page name -->
+  </head>
+
+  <!-- Header, Body and Footer are just logical seperation for structural organization -->
+  <header>
+    <!-- Header of page -->
+    <!-- You have have h1-h6 styles that are predefined for you -->
+    <h1>Heading Style h1</h1>
+    <h2>Heading Style h2</h2>
+    <h3>Heading Style h3</h3>
+    <h4>Heading Style h4</h4>
+    <h5>Heading Style h5</h5>
+    <h6>Heading Style h6</h6>
+  
+  </header>
+
+  <!-- Body (main content) of page -->
+  <body>
+    <p>
+      <!-- This is a paragraph tag used to store text. A new line is inserted -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium
+      ipsa perferendis, iure dolor distinctio tempore animi, rerum molestias,
+      suscipit ab neque libero alias dignissimos culpa repellat asperiores
+      incidunt eaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Nisi, inventore reprehenderit ducimus eos vitae alias saepe ad illum, vero
+      liquam perspiciatis itaque facere, sequi odit laudantium quae unde
+      obcaecati consequatur.animi, rerum molestias, suscipit ab neque libero
+      alias dignissimos culpa repellat asperiores incidunt eaque! Lorem ipsum,
+      dolor sit amet consectetur adipisicing elit. Nisi, inventore reprehenderit
+      ducimus eos vitae alias saepe ad illum, vero aliquam perspiciatis itaque
+      facere, sequi odit laudantium quae unde obcaecati consequatur.
+    </p>
+    <p id="SecondParagraph">Second Paragraph here!</p>
+
+    <span
+      >A new line is inserted after the paragraph but not after this span</span
+    >
+    <span
+      >You can see that this span continues from the same line as the previous
+      span.</span
+    >
+    <span
+      >Hence we have to use the &ltbr&gt tag to go to the next line. This tag is
+      self closing</span
+    ><br />
+
+    <div>
+      <p>
+        You can use div to seperate your contents into smaller chunks to maange
+        your content structure
+      </p>
+
+      <p> You can have list structures.</p>
+
+      <p>This is an ordered list</p>
+      <ol> <!-- ol for ordered lists-->
+        <!-- li stands for list items -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+      <p>This is an unordered list</p>
+      <ul> <!-- ul for unordered list -->
+        <li>Unordered Item 1</li>
+        <li>Unordered Item 2</li>
+        <li>Unordered Item 3</li>
+      </ul>
+    </div>
+
+    <div>
+      <!-- This image is a self closing tag. You can include images here.-->
+      <img
+        src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/static/optimized/rev-536aa32/wp-content/uploads/2021/05/shotkit-cat-photos-001.jpg"
+      />
+
+      <!-- You can add additional properties for different kind of tags. For images you can add width/height options to choose the width u want -->
+      <img
+        src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/static/optimized/rev-536aa32/wp-content/uploads/2021/05/shotkit-cat-photos-001.jpg"
+        width="160px"
+        height="100px"
+      /><br />
+
+      <a href="https://www.google.com.sg"
+        >This will bring you to google home page in the same tab</a
+      ><br />
+      <a href="https://www.google.com.sg" target="_blank"
+        >This will bring you to google home page in the new tab by setting the
+        _blank attribute </a
+      ><br />
+
+      <p>You can even embed videos. Example taken from W3Schools</p>
+      <video controls width="400" height="300">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/webm" />
+      </video>
+
+      <p>You can also wrap contents in an iframe</p>
+    </div>
+
+    <hr />
+    <!-- You can add a horizontal line here using hr tag -->
+
+    <div>
+      <h2>
+        The below will go into user inputable fields like text fields,
+        select/dropdown list
+      </h2>
+
+	  <div>
+		  <p>Text Field Example</p>
+		  <label>Username: </label><input type="text" placeholder="Enter your name" id="#uniqueUsername"> <!-- Id is used to represent unique elements for the webpage-->
+		  <label>Password: </label><input type="password" placeholder="Enter your password">
+      <input type="submit" value="Login">
+	  </div>
+
+    <div>
+      <h3>Button, Checkboxes Examples</h3>
+      
+      <button>Button Exmaple</button><br>
+
+      <label>Checkbox example: </label><input type="checkbox"><br>
+
+      <ul>
+        <li><label>Radio button 1</label><input type="radio"></li>
+        <li><label>Radio button 2 </label><input type="radio"></li>  
+      </ul>
+      
+      <p>Radio button 1 and 2 are not linked. So say u selecting M/F for gender u only one to be selected at all times</p>
+
+      <p>Grouped RAdio buttons - by setting same name attribute</p>
+      <p>Select your gender:</p>
+      <ul>
+        <li><label>Male</label><input type="radio" name="gender"></li>
+        <li><label>Female</label><input type="radio" name="gender"></li>  
+      </ul>
+    </div>
+
+    <div>
+      <a href="#SecondParagraph">Click to go to the second paragraph</a>
+    </div>
+
+
+
+
+    <div style="margin-top: 300px">
+      <p>This last div takes 300px of margin so it quite large</p>
+      <p>Generally most of the elements here are what wil be used. Even most complex page will break down to these few primitive structures</p>
+    </div>
+  </body>
+
+  <footer>
+    <!-- Footer of page -->
+      <p>Created by Qi Wei Lim. Footer of page</p>
+  </footer>
+</html>
